@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import "./patch-node27.js";
 
 const nextConfig: NextConfig = {
   /* config options here */
