@@ -18,10 +18,20 @@ export default function TerminalWidget() {
     },
   ]);
 
-  const terminalEndRef = useRef<HTMLDivElement>(null);
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    terminalEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (terminalBodyRef.current) {
+      terminalBodyRef.current.scrollTo({
+        top: terminalBodyRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, [history]);
 
   const handleCommand = (rawCmd: string) => {
@@ -170,7 +180,10 @@ Open for collaboration: Yes`,
           </div>
 
           {/* Terminal Screen Body */}
-          <div className="p-5 max-h-80 overflow-y-auto space-y-3 bg-[#0a0e14]">
+          <div
+            ref={terminalBodyRef}
+            className="p-5 max-h-80 overflow-y-auto space-y-3 bg-[#0a0e14]"
+          >
             {history.map((line, idx) => (
               <div key={idx}>
                 {line.type === "input" && (
@@ -191,7 +204,6 @@ Open for collaboration: Yes`,
                 )}
               </div>
             ))}
-            <div ref={terminalEndRef} />
           </div>
 
           {/* Terminal Input Line */}

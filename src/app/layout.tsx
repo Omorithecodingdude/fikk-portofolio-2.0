@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Syne, Space_Mono } from "next/font/google";
+import { Poppins, Space_Mono } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${syne.variable} ${spaceMono.variable} scroll-smooth`}
+      className={`${poppins.variable} ${spaceMono.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">

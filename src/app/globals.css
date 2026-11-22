@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: var(--font-syne), sans-serif;
+  --font-display: var(--font-poppins), sans-serif;
+  --font-sans: var(--font-poppins), sans-serif;
   --font-mono: var(--font-space-mono), monospace;
 }
 
@@ -24,7 +25,7 @@ html {
 body {
   background-color: var(--bg);
   color: var(--fg);
-  font-family: var(--font-display), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
