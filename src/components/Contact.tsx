@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { profileData } from "@/data/profile";
-import { Mail, Copy, Check, Send, MapPin, Sparkles } from "lucide-react";
+import { Mail, Copy, Check, Send } from "lucide-react";
 import GithubIcon from "@/components/GithubIcon";
 
 export default function Contact() {
@@ -36,7 +36,7 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center max-w-xl mx-auto mb-16">
           <p className="font-mono text-xs uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">
-            // contact
+            {"// contact"}
           </p>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-950 dark:text-slate-100 tracking-tight">
             Let&apos;s Connect.
@@ -107,6 +107,13 @@ export default function Contact() {
             <p className="text-xs text-slate-500 dark:text-slate-400 mb-6">
               Form ini akan membuka aplikasi email default Anda dengan format pesan rapi.
             </p>
+
+            {sentMessage && (
+              <div className="p-3 mb-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/50 text-emerald-700 dark:text-emerald-300 text-xs flex items-center gap-2">
+                <Check className="w-4 h-4 shrink-0" />
+                <span>Aplikasi email telah dibuka dengan format pesan yang telah disiapkan!</span>
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>

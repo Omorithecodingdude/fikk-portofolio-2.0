@@ -89,7 +89,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="block font-mono text-sm py-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 border-b border-[#e2e0d8]/50 dark:border-[#1e2432]/50 last:border-b-0"
             >
-              // {link.label}
+              {"// "}{link.label}
             </a>
           ))}
         </div>

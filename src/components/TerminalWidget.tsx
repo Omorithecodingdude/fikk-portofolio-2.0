@@ -145,7 +145,7 @@ Open for collaboration: Yes`,
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-10">
           <p className="font-mono text-xs uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">
-            // interactive shell
+            {"// interactive shell"}
           </p>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-950 dark:text-slate-100 tracking-tight">
             TJKT Interactive Terminal

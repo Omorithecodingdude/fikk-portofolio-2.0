@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { projectsData, Project } from "@/data/projects";
-import { ExternalLink, Sparkles, FolderGit2 } from "lucide-react";
+import { projectsData } from "@/data/projects";
+import { Sparkles } from "lucide-react";
 import GithubIcon from "@/components/GithubIcon";
 
 type CategoryFilter = "all" | "programming" | "networking" | "web";
@@ -31,7 +31,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="font-mono text-xs uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">
-            // my projects
+            {"// my projects"}
           </p>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-950 dark:text-slate-100 tracking-tight">
             Yang Pernah Aku Buat

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { profileData } from "@/data/profile";
-import { ArrowRight, Mail, Check, Sparkles, Network, Code, Server } from "lucide-react";
+import { ArrowRight, Mail, Check } from "lucide-react";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -22,7 +22,7 @@ export default function Hero() {
         {/* Class Badge & Year */}
         <div className="inline-flex items-center gap-2 mb-6">
           <span className="font-mono text-xs tracking-widest text-slate-500 dark:text-slate-400 uppercase">
-            // {profileData.classInfo} · {profileData.school} · 2026
+            {"// "}{profileData.classInfo} · {profileData.school} · 2026
           </span>
         </div>
 

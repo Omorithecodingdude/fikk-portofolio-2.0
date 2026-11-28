@@ -22,7 +22,7 @@ export default function About() {
           {/* Left Column: Narrative */}
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">
-              // about me
+              {"// about me"}
             </p>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-950 dark:text-slate-100 tracking-tight mb-6">
               Halo, aku {profileData.nickname}.
@@ -48,7 +48,7 @@ export default function About() {
             <div className="rounded-2xl border border-[#e2e0d8] dark:border-[#1e2432] bg-white dark:bg-[#0d0f14] p-6 sm:p-8 shadow-sm">
               <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#e2e0d8] dark:border-[#1e2432]">
                 <span className="font-mono text-xs tracking-widest text-blue-600 dark:text-blue-400 uppercase font-semibold">
-                  // QUICK FACTS
+                  {"// QUICK FACTS"}
                 </span>
                 <span className="font-mono text-[10px] text-slate-400">TJKT 2026</span>
               </div>

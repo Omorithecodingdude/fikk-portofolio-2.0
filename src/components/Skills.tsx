@@ -10,7 +10,7 @@ export default function Skills() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="font-mono text-xs uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">
-            // technical skills
+            {"// technical skills"}
           </p>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-950 dark:text-slate-100 tracking-tight">
             Yang Bisa Aku Lakukan

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { profileData } from "@/data/profile";
-import { ArrowUp, Terminal, Heart } from "lucide-react";
+import { ArrowUp, Terminal } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
